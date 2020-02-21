@@ -1,0 +1,1123 @@
+﻿<%@ Master Language="C#"  AutoEventWireup="true" CodeFile="MasterPageProp.master.cs" Inherits="FUNC_OK_MasterPage" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<%@ Register Namespace="Google.API" TagPrefix="GoogleAPI" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<script runat="server">
+
+ 
+
+
+
+
+
+
+
+ 
+</script>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>Shenali Server</title>
+    
+    <link href="../../css/StyleSheet.css" rel="Stylesheet" type="text/css" />
+     <asp:contentplaceholder id="head" runat="server" />
+    
+    <script type="text/javascript" src="../../Scripts/jquery.js"></script>
+    <script type="text/javascript" src="../../Scripts/menu.js"></script>
+ 
+
+
+    
+
+              
+                        
+   
+    <style type="text/css">
+        .style1
+        {
+            width: 373px;
+        }
+    
+    </style>
+               
+                        
+   
+</head>
+<body>
+      
+      
+  <div style="width: auto; height: 100%">
+
+        <div style="float: left; width: 9%; height: 573px;">
+        
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/images/shenali logo4.png" CssClass="imagelogo" />
+        </div>
+        
+        
+        
+     
+
+        <div style="float: left; width: 83%;height: 100%; ">
+     
+
+                          
+
+          <form id="form1" runat="server">
+    <div id="tester">
+      
+        
+        <table style="width: 100%;">
+            <tr valign="middle">
+          
+                <td colspan="2" height="120px" class="HeaderPane"
+                    
+                    style="background-position: center; background-image:url('../../images/top.png'); background-repeat: repeat;">
+                    
+                    <div id="menu">
+                <ul class="menu">
+                         <li><a href="MHome.aspx" class="parent"><span>Home</span></a>
+            <div><ul>
+                <li><a href="#" class="parent"><span>Login Details</span></a>
+                    <div><ul>
+                        <li><a href="MChangeAcc.aspx"><span>User Account Info</span></a></li>
+                        <li><a href="MChangeAccDetail.aspx"><span>User Details</span></a></li>              
+                   
+                    </ul></div>
+                </li>
+               
+            </ul></div>
+        </li>
+
+         <!--  ------------------------------------------->
+
+       
+
+                 
+                
+
+                    
+             
+
+              <asp:Literal ID="Admin" runat="server">
+
+        <li><a href="#" class="parent"><span>Stock</span></a>
+            <div><ul>
+                <li><a href="#" class="parent"><span>Add new</span></a>
+                    <div><ul>
+                        <li><a href="#" class="parent"><span>Add User</span></a>
+                            <div><ul>
+                                <li><a href="MAddUser.aspx"><span>Add User*</span></a></li>
+                                <li><a href="MAdd_User_Detail.aspx"><span>Add User Details*</span></a></li>
+                                <li><a href="MDirectAddUser.aspx"><span> Add User Directly*</span></a></li>
+                            </ul></div>
+                        </li>
+                     
+                        <li><a href="#" class="parent"><span>Add Customer</span></a>
+                          <div><ul>
+                                <li><a href="MAddCustomerAccount.aspx"><span>Customer*</span></a></li>
+                                <li><a href="MAdd_Customer_Detail.aspx"><span>Customer Detail*</span></a></li>
+                                <li><a href="#"><span>Customer Order</span></a></li>
+                            </ul></div>
+                        </li>
+                         <li><a href="#" class="parent"><span>Add Bakery</span></a>
+                         <div><ul>
+                                <li><a href="MAdd_BK_Items.aspx"><span>Item*</span></a></li>
+                                <li><a href="MAdd_BK_StartSale.aspx"><span>Sale*</span></a></li>
+                            </ul></div>
+                        </li>
+
+
+                        <li><a href="#" class="parent"><span>Add Restaurant</span></a>
+                         <div><ul>
+                                <li><a href="MAdd_RT_Items.aspx"><span>Item*</span></a></li>
+                                <li><a href="MAdd_RT_StartSale.aspx"><span>Sale*</span></a></li>
+             
+                                     <li><a href="#"class="parent"><span>Image</span></a>
+                                                 <div><ul>
+                                                 <li><a href="MAddGalleryImage.aspx"><span>Add Images To Gallery*</span></a></li>   
+                                                 <li><a href="../../ImageGallery.html"><span>Stuff ImageGallery*</span></a></li>                                      
+                                                 </ul></div>
+                                    </li>
+                            </ul></div>
+                        </li>
+                        <li><a href="#" class="parent"><span>Add Rest house</span></a>
+                         <div><ul>
+                                <li><a href="MAdd_RH_Items.aspx"><span>Item*</span></a></li>
+                                <li><a href="#"><span>Sale</span></a></li>
+                               
+                                <li><a href="MAddRoomType.aspx"><span>Room Type*</span></a></li>
+                                 <li><a href="MAdd_RH_Rooms.aspx"><span>Room*</span></a></li>
+                                 <li><a href="MAddRH_Bill.aspx"><span>Reservation*</span></a></li>
+                                     <li><a href="#"class="parent"><span>Image</span></a>
+                                                 <div><ul>
+                                                 <li><a href="MAddRHGalleryImage.aspx"><span>Add Images To Rest House Gallery*</span></a></li>   
+                                                 <li><a href="../../ImageGallery.html"><span>Stuff ImageGallery*</span></a></li>                                      
+                                                 </ul></div>
+                                    </li>
+                            </ul></div>
+                         </li>
+                        <li><a href="#" class="parent"><span>Add Take Away Outlet</span></a>
+                            <div><ul>
+                               <li><a href="MAdd_TAO_Items.aspx"><span>Item*</span></a></li>
+                                <li><a href="MAdd_TAO_StartSale.aspx"><span>Sale</span></a></li>
+                            </ul></div>
+                        </li>
+                          <li><a href="MAddItem_details.aspx"><span>Add Item Description*</span></a></li>
+                        <li><a href="MAddItemCategory.aspx"><span>Add Category*</span></a></li>
+                        <li><a href="MAddCompany.aspx"><span>Add Company*</span></a></li>
+                        <li><a href="MAdd_Location.aspx"><span>Add Location*</span></a></li>
+
+
+                        
+                    </ul></div>
+                </li>
+
+                <li><a href="#" class="parent"><span>Update</span></a>
+                <div><ul>
+                        <li><a href="#" class="parent"><span>Update User</span></a>
+                            <div><ul>
+                                <li><a href="MUpdateUser1.aspx"><span> Update User*</span></a></li>
+                                <li><a href="MUpdateUser_details1.aspx"><span> Update User Detail*</span></a></li>
+                                <li><a href="MUser_Status.aspx"><span>Update User Status*</span></a></li>
+
+                                
+                            </ul></div>
+                        </li>
+                     
+                  
+                         <li><a href="#" class="parent"><span>Update Bakery</span></a>
+                         <div><ul>
+                                <li><a href="MUpdate_BK_Items.aspx"><span>Item*</span></a></li>
+                             
+                            </ul></div>
+                        </li>
+
+
+                        <li><a href="#" class="parent"><span>Update Restaurant</span></a>
+                         <div><ul>
+                                 <li><a href="MUpdate_RT_Items.aspx"><span>Item*</span></a></li>
+                        
+                            </ul></div>
+                        </li>
+                        <li><a href="#" class="parent"><span>Update Rest house</span></a>
+                         <div><ul>
+                            <li><a href="MUpdate_RH_Items.aspx"><span>Item*</span></a></li>
+                       
+                            </ul></div>
+                         </li>
+                        <li><a href="#" class="parent"><span>Update Take Away Outlet</span></a>
+                            <div><ul>
+                      <li><a href="MUpdate_TAO_Items.aspx"><span>Item*</span></a></li>
+                       
+                            </ul></div>
+                        </li>
+                 
+                    </ul></div>
+                </li>
+
+                <li><a href="#" class="parent"><span>Delete</span></a>
+                <div><ul>
+                        <li><a href="#" class="parent"><span>Delete User</span></a>
+                            <div><ul>
+                                <li><a href="MDeleteUser1.aspx"><span> Delete User*</span></a></li>
+                                <li><a href="MDeleteUser_Details1.aspx"><span> Delete User Detail*</span></a></li>
+                            </ul></div>
+                        </li>
+                     
+                         <li><a href="#" class="parent"><span>Delete Bakery</span></a>
+                         <div><ul>
+                                <li><a href="MDelete_BK_Items.aspx"><span>Item*</span></a></li>
+                  
+                            </ul></div>
+                        </li>
+
+
+                        <li><a href="#" class="parent"><span>Delete Restaurant</span></a>
+                         <div><ul>
+                                <li><a href="MDelete_RT_Items.aspx"><span>Item*</span></a></li>
+                             
+                                    <li><a href="#"class="parent"><span>Image</span></a>
+                                                 <div><ul>                               
+                                                 <li><a href="MDeleteImage.aspx"><span>Del from gallery*</span></a></li>
+                                                 </ul></div>
+                                    </li>
+
+                            </ul></div>
+                        </li>
+                        <li><a href="#" class="parent"><span>Delete Rest house</span></a>
+                         <div><ul>
+                                <li><a href="MDelete_RT_Items.aspx"><span>Item</span></a></li>
+                           
+                                    <li><a href="#"class="parent"><span>Image</span></a>
+                                                 <div><ul>                               
+                                                 <li><a href="MDeleteRHImage.aspx"><span>Del from Rest House gallery*</span></a></li>
+                                                 </ul></div>
+                                    </li>
+                            </ul></div>
+                         </li>
+                        <li><a href="#" class="parent"><span>Delete Take Away Outlet</span></a>
+                            <div><ul>
+                               <li><a href="MDelete_TAO_Items.aspx"><span>Item*</span></a></li>
+                              
+                            </ul></div>
+                        </li>
+             
+                    </ul></div>
+                </li>
+
+                <li><a href="#" class="parent"><span>View & Edit</span></a>
+                <div><ul>
+                    
+                   
+                      <li><a href="#" class="parent"><span>Bakery</span></a>
+                         <div><ul>
+                                <li><a href="MEdit_BK.aspx"><span>Stock*</span></a></li>
+              
+                            </ul></div>
+                        </li>
+
+
+                        <li><a href="#" class="parent"><span>Restaurant</span></a>
+                         <div><ul>
+                               
+                                <li><a href="MEdit_RT.aspx"><span>Stock*</span></a></li>
+                              </ul></div>          
+                        </li>
+                        <li><a href="#" class="parent"><span>Rest house</span></a>
+                         <div><ul>
+                                <li><a href="MEdit_RH.aspx"><span>Stock*</span></a></li>
+                             
+                               
+                            </ul></div>
+                         </li>
+                        <li><a href="#" class="parent"><span>Take Away Outlet</span></a>
+                            <div><ul>
+                               <li><a href="MEdit_TAO.aspx"><span>Stock*</span></a></li>
+                                
+                            </ul></div>
+                        </li>
+                            <li><a href="#" class="parent"><span>News</span></a>
+                            <div><ul>
+                               <li><a href="MAdd_News.aspx"><span>Edit News*</span></a></li>
+                                
+                            </ul></div>
+                        </li>
+             
+                    </ul></div>
+                </li>
+                
+            </ul></div>
+        </li>
+       
+     <!--  ------------------------------------------->
+            <li><a href="#" class="parent"><span>Viewing Options</span></a>
+            <div><ul>
+
+              <li><a href="#" class="parent"><span>User </span></a>
+                            <div><ul>
+                               <li><a href="MViewUserDetails.aspx"><span>User Account *</span></a></li>
+                                <li><a href="MViewUserDetails.aspx"><span>User Details*</span></a></li>
+                            </ul></div>
+              </li>
+            
+                 <li><a href="#" class="parent"><span>Bakery </span></a>
+                            <div><ul>
+                               <li><a href="MViewBK_Records.aspx"><span>Records*</span></a></li>
+                          
+                            </ul></div>
+                        </li>
+                  <li><a href="#" class="parent"><span>Restaurant</span></a>
+                   <div><ul>
+                               <li><a href="MViewRT_Records.aspx"><span>Records*</span></a></li>
+            
+                    </ul></div>
+                    </li>
+                  <li><a href="#" class="parent"><span>Rest House</span></a>
+                    <div><ul>
+                               <li><a href="MViewRH_Records.aspx"><span>Records*</span></a></li>
+                                <li><a href="#" class="parent"><span>Rooms</span></a>
+                                   <div><ul>
+                                    <li><a href="MViewRoomDetails.aspx"><span>Rooms*</span></a></li>
+                   
+
+                                    </ul></div>
+                                </li>
+
+                    </ul></div>
+                   </li>
+                  <li><a href="#" class="parent"><span>Take Away</span></a>
+                   <div><ul>
+                               <li><a href="MViewTAO_Records.aspx"><span>Records*</span></a></li>
+                       
+                    </ul></div>
+                    </li>
+
+                    <li><a href="#" class="parent"><span>Customer</span></a>
+                   <div><ul>
+                               <li><a href="MViewOnlineOrders.aspx"><span>Orders*</span></a></li>
+                    
+                    </ul></div>
+                    </li>
+
+                  <li><a href="#" class="parent"><span>Overall</span></a>
+                   <div><ul>
+                               <li><a href="#"><span>Records</span></a></li>
+                    
+                    </ul></div>
+                  </li>
+            </ul></div>
+        </li>
+
+    
+
+         <!--  ------------------------------------------->
+        <li><a href="#" class="parent"><span>Web Inputs</span></a>
+            <div><ul>
+                <li><a href="#" class="parent"><span>Edit Options</span></a>
+                    <div><ul>
+                        <li><a href="#" class="parent"><span>Restaurant </span></a>
+                            <div><ul>
+                               <li><a href="MAdd_MenuItemFront.aspx"><span>Add New Menu Front Item(Feed)*</span></a></li>
+                                 <li><a href="MAdd_Menu_Items.aspx "><span>Add New Menu Item*</span></a></li>                 
+                            </ul></div>
+                        </li>
+                        <li><a href="#"><span>Rest House</span></a></li>
+                    
+                    </ul></div>
+                </li>
+               
+             
+            </ul></div>
+        </li>
+         </asp:Literal>   
+ <!--  ------------------------------------------->
+  <!--  ------------------------------------------->
+          <asp:Literal ID="RTManager" runat="server">
+
+        <li><a href="#" class="parent"><span>Edit</span></a>
+            <div><ul>
+                <li><a href="#" class="parent"><span>Add new</span></a>
+                    <div><ul>
+                 
+                        <li><a href="#" class="parent"><span>Add Customer</span></a>
+                          <div><ul>
+                                <li><a href="MAddCustomerAccount.aspx"><span>Customer*</span></a></li>
+                                <li><a href="MAdd_Customer_Detail.aspx"><span>Customer Detail*</span></a></li>
+                                <li><a href="#"><span>Customer Order</span></a></li>
+                            </ul></div>
+                        </li>
+                         <li><a href="#" class="parent"><span>Add Bakery</span></a>
+                         <div><ul>
+                                <li><a href="MAdd_BK_Items.aspx"><span>Item*</span></a></li>
+                                <li><a href="MAdd_BK_StartSale.aspx"><span>Sale*</span></a></li>
+                            </ul></div>
+                        </li>
+
+
+                        <li><a href="#" class="parent"><span>Add Restaurant</span></a>
+                         <div><ul>
+                                <li><a href="MAdd_RT_Items.aspx"><span>Item*</span></a></li>
+                                <li><a href="MAdd_RT_StartSale.aspx"><span>Sale*</span></a></li>
+
+                                
+                            </ul></div>
+                        </li>
+                       
+                        <li><a href="#" class="parent"><span>Add Take Away Outlet</span></a>
+                            <div><ul>
+                               <li><a href="MAdd_TAO_Items.aspx"><span>Item*</span></a></li>
+                               <li><a href="MAdd_TAO_StartSale.aspx"><span>Sale*</span></a></li>
+                         
+                            </ul></div>
+                        </li>
+                          <li><a href="MAddItem_details.aspx"><span>Add Item Description*</span></a></li>
+                        <li><a href="MAddItemCategory.aspx"><span>Add Category*</span></a></li>
+                        <li><a href="MAddCompany.aspx"><span>Add Company*</span></a></li>
+
+
+                        
+                    </ul></div>
+                </li>
+
+                <li><a href="#" class="parent"><span>Update</span></a>
+                <div><ul>
+                      
+                     
+                         <li><a href="#" class="parent"><span>Update Bakery</span></a>
+                         <div><ul>
+                                <li><a href="MUpdate_BK_Items.aspx"><span>Item*</span></a></li>
+                             
+                            </ul></div>
+                        </li>
+
+
+                        <li><a href="#" class="parent"><span>Update Restaurant</span></a>
+                         <div><ul>
+                                 <li><a href="MUpdate_RT_Items.aspx"><span>Item*</span></a></li>
+                        
+                            </ul></div>
+                        </li>
+                        
+                        <li><a href="#" class="parent"><span>Update Take Away Outlet</span></a>
+                            <div><ul>
+                      <li><a href="MUpdate_TAO_Items.aspx"><span>Item*</span></a></li>
+                       
+                            </ul></div>
+                        </li>
+            
+
+
+
+                    </ul></div>
+                </li>
+
+                <li><a href="#" class="parent"><span>Delete</span></a>
+                <div><ul>
+                      <li><a href="#" class="parent"><span>Delete Bakery</span></a>
+                         <div><ul>
+                                <li><a href="MDelete_BK_Items.aspx"><span>Item*</span></a></li>
+                  
+                            </ul></div>
+                        </li>
+
+
+                        <li><a href="#" class="parent"><span>Delete Restaurant</span></a>
+                         <div><ul>
+                                <li><a href="MDelete_RT_Items.aspx"><span>Item*</span></a></li>
+                             
+                                    <li><a href="#"class="parent"><span>Image</span></a>
+                                                 <div><ul>                               
+                                                 <li><a href="MDeleteImage.aspx"><span>Del from gallery*</span></a></li>
+                                                 </ul></div>
+                                    </li>
+
+                            </ul></div>
+                        </li>
+                        
+                        <li><a href="#" class="parent"><span>Delete Take Away Outlet</span></a>
+                            <div><ul>
+                               <li><a href="MDelete_TAO_Items.aspx"><span>Item*</span></a></li>
+                              
+                            </ul></div>
+                        </li>
+
+                    </ul></div>
+                </li>
+                
+            </ul></div>
+        </li>
+       
+     <!--  ------------------------------------------->
+            <li><a href="#" class="parent"><span>Viewing Options</span></a>
+            <div><ul>
+
+              
+                 <li><a href="#" class="parent"><span>Bakery </span></a>
+                            <div><ul>
+                               <li><a href="MViewBK_Records.aspx"><span>Records*</span></a></li>
+                          
+                            </ul></div>
+                        </li>
+                  <li><a href="#" class="parent"><span>Restaurant</span></a>
+                   <div><ul>
+                               <li><a href="MViewRT_Records.aspx"><span>Records*</span></a></li>
+            
+                    </ul></div>
+                    </li>
+                 
+                  <li><a href="#" class="parent"><span>Take Away</span></a>
+                   <div><ul>
+                               <li><a href="MViewTAO_Records.aspx"><span>Records*</span></a></li>
+                       
+                    </ul></div>
+                    </li>
+
+                    <li><a href="#" class="parent"><span>Customer</span></a>
+                   <div><ul>
+                               <li><a href="MViewOnlineOrders.aspx"><span>Orders*</span></a></li>
+                    
+                    </ul></div>
+                    </li>
+
+                  
+            </ul></div>
+        </li>
+
+    
+
+         <!--  ------------------------------------------->
+        <li><a href="#" class="parent"><span>Web Inputs</span></a>
+            <div><ul>
+                <li><a href="#" class="parent"><span>Edit Options</span></a>
+                    <div><ul>
+                        <li><a href="#" class="parent"><span>Restaurant </span></a>
+                            <div><ul>
+                               <li><a href="MAdd_MenuItemFront.aspx"><span>Add New Menu Front Item(Feed)*</span></a></li>
+                                 <li><a href="MAdd_Menu_Items.aspx "><span>Add New Menu Item*</span></a></li>                 
+                            </ul></div>
+                        </li>      
+                    </ul></div>
+                </li>
+               
+             
+            </ul></div>
+        </li>
+         </asp:Literal>   
+
+         <!--  ------------------------------------------->
+         <!--  ------------------------------------------->
+          <asp:Literal ID="RHManager" runat="server">
+
+        <li><a href="#" class="parent"><span>Edit</span></a>
+            <div><ul>
+                <li><a href="#" class="parent"><span>Add new</span></a>
+                    <div><ul>
+                 
+                        <li><a href="#" class="parent"><span>Add Customer</span></a>
+                          <div><ul>
+                                <li><a href="MAddCustomerAccount.aspx"><span>Customer*</span></a></li>
+                                <li><a href="MAdd_Customer_Detail.aspx"><span>Customer Detail*</span></a></li>
+                            
+                            </ul></div>
+                        </li>
+                        
+
+
+                    
+                        <li><a href="#" class="parent"><span>Add Rest house</span></a>
+                         <div><ul>
+                                <li><a href="MAdd_RH_Items.aspx"><span>Item*</span></a></li>
+                                <li><a href="#"><span>Sale</span></a></li>
+                               
+                                <li><a href="MAddRoomType.aspx"><span>Room Type*</span></a></li>
+                                 <li><a href="MAdd_RH_Rooms.aspx"><span>Room*</span></a></li>
+                                 <li><a href="MAddRH_Bill.aspx"><span>Reservation*</span></a></li>
+                                   
+                            </ul></div>
+                         </li>
+                      
+                          <li><a href="MAddItem_details.aspx"><span>Add Item Description*</span></a></li>
+                        <li><a href="MAddItemCategory.aspx"><span>Add Category*</span></a></li>
+                        <li><a href="MAddCompany.aspx"><span>Add Company*</span></a></li>
+
+
+                        
+                    </ul></div>
+                </li>
+
+               <li><a href="#" class="parent"><span>Update</span></a>
+                <div><ul>
+                        
+                                                                   
+                        <li><a href="#" class="parent"><span>Update Rest house</span></a>
+                         <div><ul>
+                            <li><a href="MUpdate_RH_Items.aspx"><span>Item*</span></a></li>
+                       
+                            </ul></div>
+                         </li>
+                      
+                 
+                    </ul></div>
+                </li>
+
+              <li><a href="#" class="parent"><span>Delete</span></a>
+                <div><ul>
+                 
+
+
+                        <li><a href="#" class="parent"><span>Delete Rest house</span></a>
+                         <div><ul>
+                                <li><a href="MDelete_RT_Items.aspx"><span>Item</span></a></li>
+                           
+                                    <li><a href="#"class="parent"><span>Image</span></a>
+                                                 <div><ul>                               
+                                                 <li><a href="MDeleteRHImage.aspx"><span>Del from Rest House gallery*</span></a></li>
+                                                 </ul></div>
+                                    </li>
+                            </ul></div>
+                         </li>
+                    
+             
+                    </ul></div>
+                </li>
+                
+            </ul></div>
+        </li>
+       
+     <!--  ------------------------------------------->
+            <li><a href="#" class="parent"><span>Viewing Options</span></a>
+            <div><ul>
+
+                            
+                  <li><a href="#" class="parent"><span>Rest House</span></a>
+                    <div><ul>
+                               <li><a href="MViewRH_Records.aspx"><span>Records*</span></a></li>
+                                <li><a href="#" class="parent"><span>Rooms</span></a>
+                                   <div><ul>
+                                    <li><a href="MViewRoomDetails.aspx"><span>Rooms*</span></a></li>
+                                    <li><a href="#"><span>Room Type</span></a></li>
+
+                                    </ul></div>
+                                </li>
+
+                    </ul></div>
+                   </li>
+                  
+
+                    
+
+                  
+            </ul></div>
+        </li>
+
+    
+
+         <!--  ------------------------------------------->
+          <li><a href="#" class="parent"><span>Web Inputs</span></a>
+            <div><ul>
+                <li><a href="#" class="parent"><span>Edit Options</span></a>
+                    <div><ul>
+                        
+                        <li><a href="#"><span>Rest House</span></a></li>
+                    
+                    </ul></div>
+                </li>
+               
+             
+            </ul></div>
+        </li>
+         </asp:Literal>   
+
+         <!--  ------------------------------------------->
+  <!--  ------------------------------------------->
+          <asp:Literal ID="Worker" runat="server">
+
+          <li><a href="#" class="parent"><span>Stock</span></a>
+            <div><ul>
+                <li><a href="#" class="parent"><span>Add new</span></a>
+                    <div><ul>
+                      
+                    
+                         <li><a href="#" class="parent"><span>Add Bakery</span></a>
+                         <div><ul>
+                             
+                                <li><a href="MAdd_BK_StartSale.aspx"><span>Sale*</span></a></li>
+                            </ul></div>
+                        </li>
+
+
+                        <li><a href="#" class="parent"><span>Add Restaurant</span></a>
+                         <div><ul>
+                               
+                                <li><a href="MAdd_RT_StartSale.aspx"><span>Sale*</span></a></li>
+             
+                                    
+                            </ul></div>
+                        </li>
+                        <li><a href="#" class="parent"><span>Add Rest house</span></a>
+                         <div><ul>
+                                <li><a href="MAdd_RH_Items.aspx"><span>Item*</span></a></li>
+                      
+                            </ul></div>
+                         </li>
+                        <li><a href="#" class="parent"><span>Add Take Away Outlet</span></a>
+                            <div><ul>
+                        
+                                <li><a href="MAdd_TAO_StartSale.aspx"><span>Sale</span></a></li>
+                            </ul></div>
+                        </li>
+                 
+
+                        
+                    </ul></div>
+                </li>
+
+                <li><a href="#" class="parent"><span>Update</span></a>
+                <div><ul>
+                      
+                     
+                  
+                         <li><a href="#" class="parent"><span>Update Bakery</span></a>
+                         <div><ul>
+                                <li><a href="MUpdate_BK_Items.aspx"><span>Item*</span></a></li>
+                             
+                            </ul></div>
+                        </li>
+
+
+                        <li><a href="#" class="parent"><span>Update Restaurant</span></a>
+                         <div><ul>
+                                 <li><a href="MUpdate_RT_Items.aspx"><span>Item*</span></a></li>
+                        
+                            </ul></div>
+                        </li>
+                        <li><a href="#" class="parent"><span>Update Rest house</span></a>
+                         <div><ul>
+                            <li><a href="MUpdate_RH_Items.aspx"><span>Item*</span></a></li>
+                       
+                            </ul></div>
+                         </li>
+                        <li><a href="#" class="parent"><span>Update Take Away Outlet</span></a>
+                            <div><ul>
+                      <li><a href="MUpdate_TAO_Items.aspx"><span>Item*</span></a></li>
+                       
+                            </ul></div>
+                        </li>
+                 
+                    </ul></div>
+                </li>
+
+             
+
+                <li><a href="#" class="parent"><span>View & Edit</span></a>
+                <div><ul>
+                    
+                   
+                      <li><a href="#" class="parent"><span>Bakery</span></a>
+                         <div><ul>
+                                <li><a href="MEdit_BK.aspx"><span>Stock*</span></a></li>
+              
+                            </ul></div>
+                        </li>
+
+
+                        <li><a href="#" class="parent"><span>Restaurant</span></a>
+                         <div><ul>
+                               
+                                <li><a href="MEdit_RT.aspx"><span>Stock*</span></a></li>
+                              </ul></div>          
+                        </li>
+                        
+                        <li><a href="#" class="parent"><span>Take Away Outlet</span></a>
+                            <div><ul>
+                               <li><a href="MEdit_TAO.aspx"><span>Stock*</span></a></li>
+                                
+                            </ul></div>
+                        </li>
+                            
+             
+                    </ul></div>
+                </li>
+                
+            </ul></div>
+        </li>
+       
+     <!--  ------------------------------------------->
+            <li><a href="#" class="parent"><span>Viewing Options</span></a>
+            <div><ul>
+
+
+                    <li><a href="#" class="parent"><span>Customer</span></a>
+                   <div><ul>
+                               <li><a href="MViewOnlineOrders.aspx"><span>Orders*</span></a></li>
+                    
+                    </ul></div>
+                    </li>
+
+                  
+            </ul></div>
+        </li>
+
+    
+
+         <!--  ------------------------------------------->
+
+         </asp:Literal> 
+           <!--  ------------------------------------------->
+  <!--  ------------------------------------------->
+          <asp:Literal ID="Receptionist" runat="server">
+
+      <li><a href="#" class="parent"><span>Stock</span></a>
+            <div><ul>
+                <li><a href="#" class="parent"><span>Add new</span></a>
+                    <div><ul>
+                   
+                        <li><a href="#" class="parent"><span>Add Rest house</span></a>
+                         <div><ul>
+                                <li><a href="MAdd_RH_Items.aspx"><span>Item*</span></a></li>
+                                <li><a href="#"><span>Sale</span></a></li>
+                               
+                          
+                              
+                                 <li><a href="MAddRH_Bill.aspx"><span>Reservation*</span></a></li>
+                                     
+                            </ul></div>
+                         </li>
+                      
+                   
+                    </ul></div>
+                </li>
+
+                <li><a href="#" class="parent"><span>Update</span></a>
+                <div><ul>
+                      
+                  
+
+                     
+                        <li><a href="#" class="parent"><span>Update Rest house</span></a>
+                         <div><ul>
+                            <li><a href="MUpdate_RH_Items.aspx"><span>Item*</span></a></li>
+                       
+                            </ul></div>
+                         </li>
+                       
+                 </ul></div>
+                </li>
+
+                <li><a href="#" class="parent"><span>View & Edit</span></a>
+                <div><ul>
+                    
+                      
+                        <li><a href="#" class="parent"><span>Rest house</span></a>
+                         <div><ul>
+                                <li><a href="MEdit_RH.aspx"><span>Stock*</span></a></li>
+                             
+                               
+                            </ul></div>
+                         </li>
+                       
+             
+                </ul></div>
+                </li>
+                
+         </ul></div>
+        </li>
+       
+     <!--  ------------------------------------------->
+            <li><a href="#" class="parent"><span>Viewing Options</span></a>
+            <div><ul>
+                              
+                  <li><a href="#" class="parent"><span>Rest House</span></a>
+                    <div><ul>
+                             
+                                <li><a href="#" class="parent"><span>Rooms</span></a>
+                                   <div><ul>
+                                    <li><a href="MViewRoomDetails.aspx"><span>Rooms*</span></a></li>
+                          
+
+                                    </ul></div>
+                                </li>
+
+                    </ul></div>
+                   </li>                                           
+            </ul></div>
+        </li>
+
+    
+
+         <!--  ------------------------------------------->
+        
+
+ <!--  ------------------------------------------->
+ </asp:Literal> 
+        <li><a href="#"><span>Help</span></a></li>
+        <li class="last"><a href="#"><span>Contacts</span></a></li>
+
+          
+    </ul>
+</div>
+                
+ <div id="copyright"><a href="http://apycom.com/"></a></div>
+ 
+             <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+                         </asp:ToolkitScriptManager>
+                    
+                    <asp:ConfirmButtonExtender ID="ConfirmButtonExtender1" runat="server" TargetControlID="lk" ConfirmText="Are sure you want to log out?">
+
+                    </asp:ConfirmButtonExtender>                
+                    </td>
+             
+                      <td height="40" class="HeaderPane"
+                    style="background-color: #C0C0C0">
+
+                    Login in as : <a href="#" style="background-color: #C0C0C0;">
+                        <asp:Literal ID="typelit" runat="server"></asp:Literal></a>
+                   <p></p> User ID : <asp:LinkButton Id="lk" href="Logout.aspx" runat="server" style="background-color: #C0C0C0;">  <asp:Literal ID="userlit" runat="server"></asp:Literal> (log out) </asp:LinkButton>
+                    <p></p> Location :  <a href="#" style="background-color: #C0C0C0;">
+                    <asp:Literal ID="userl" runat="server"></asp:Literal></a>
+                    <asp:contentplaceholder id="LoginInfo" runat="server" />
+
+                    </td>
+            </tr>
+            <tr valign=top>
+                <td style="background-color:#C0C0C0;width: 15%; background-image: url('/StartIndex/BaseRestaurant/images/noise.png');">
+                   
+                     <div ID="Me1" runat="server"
+                         style="color: #000000; height: auto; ">
+     
+<asp:Accordion   
+    ID="Accordion1"   
+    CssClass="accordion"  
+    HeaderCssClass="accordionHeader"  
+    HeaderSelectedCssClass="accordionHeaderSelected"  
+    ContentCssClass="accordionContent"  
+    SelectedIndex="0"
+    AutoSize="None"
+    FadeTransitions="true"
+    TransitionDuration="200"
+    FramesPerSecond="40"
+    RequireOpenedPane="false"
+    SuppressHeaderPostbacks="true"
+     
+    runat="server" Font-Bold="True" BackColor="#999999" Font-Size="Smaller">  
+<Panes>  
+    <asp:AccordionPane ID="AccordionPane1" runat="server">  
+        <Header>Personal</Header>  
+        <Content>  
+   
+         <asp:HyperLink ID="HyperLink1"  runat="server" NavigateUrl="MChangeAcc.aspx">Change Account</asp:HyperLink><br />
+         <asp:HyperLink ID="HyperLink5"  runat="server" NavigateUrl="~/FUNC/Done/MChangeAccDetail.aspx">Change Account Details</asp:HyperLink><br />
+         <asp:HyperLink ID="HyperLink4" class="MyStyle1" runat="server" ClientIDMode="Inherit" NavigateUrl="~/FUNC/Done/InMessagebox.aspx">View MessageBox</asp:HyperLink><br />
+            <asp:HyperLink ID="HyperLink2" class="MyStyle1" runat="server" NavigateUrl="~/FUNC/Done/InCreateNew.aspx">Create New Message</asp:HyperLink><br />
+            <asp:HyperLink ID="HyperLink3" class="MyStyle1" runat="server" NavigateUrl="~/FUNC/Done/InViewInUnread.aspx">View New Messages</asp:HyperLink><br />
+            
+
+          
+       </Content>  
+    </asp:AccordionPane>  
+    <asp:AccordionPane ID="AccordionPane2" runat="server">  
+        <Header>Shenali Locations</Header>  
+        <Content>  
+           <asp:HyperLink ID="HyperLink13" class="MyStyle1" runat="server" NavigateUrl="~/ShenaliHome.aspx">Shenali Home</asp:HyperLink><br />
+            <asp:HyperLink ID="HyperLink14" class="MyStyle1" runat="server" NavigateUrl="~/BaseRestaurant/RestaurantStart.aspx">Shenali Restaurant</asp:HyperLink><br />
+            <asp:HyperLink ID="HyperLink15" class="MyStyle1" runat="server" NavigateUrl="~/BaseRestHouse/Rest HouseStart.aspx">Shenali Rest House</asp:HyperLink><br />
+                   
+      </Content>  
+    </asp:AccordionPane>  
+    <asp:AccordionPane ID="AccordionPane3" runat="server">  
+        <Header>Customer Links</Header>  
+        <Content>  
+           <asp:HyperLink ID="HyperLink24" class="MyStyle1" runat="server" NavigateUrl="~/BaseRestaurant/OrderPage.aspx">Order Page</asp:HyperLink><br />
+            <asp:HyperLink ID="HyperLink25" class="MyStyle1" runat="server" NavigateUrl="~/BaseRestHouse/ReservationPage.aspx">Reservation Page</asp:HyperLink><br />
+            <asp:HyperLink ID="HyperLink26" class="MyStyle1" runat="server" NavigateUrl="~/BaseRestaurant/contact.aspx">Contact Page</asp:HyperLink><br />
+             <asp:HyperLink ID="HyperLink10" class="MyStyle1" runat="server" NavigateUrl="~/BaseRestaurant/menu.aspx">Menu Page</asp:HyperLink><br />
+
+      </Content>  
+    </asp:AccordionPane>  
+        <asp:AccordionPane ID="AccordionPane4" runat="server">  
+        <Header>Gallery</Header>  
+        <Content>  
+           <asp:HyperLink ID="HyperLink7" class="MyStyle1" runat="server" NavigateUrl="~/BaseRestaurant/gallery.aspx">Restaurant Gallery </asp:HyperLink><br />
+            <asp:HyperLink ID="HyperLink8" class="MyStyle1" runat="server" NavigateUrl="~/BaseRestHouse/gallery.aspx">Rest House Gallery</asp:HyperLink><br />
+            <asp:HyperLink ID="HyperLink9" class="MyStyle1" runat="server" NavigateUrl="~/ImageGallery.aspx">Shenali Gallery</asp:HyperLink><br />
+          
+      </Content>  
+    </asp:AccordionPane> 
+        <asp:AccordionPane ID="AccordionPane5" runat="server">  
+        <Header>Send Mails</Header>  
+        <Content>  
+           <asp:HyperLink ID="HyperLink40" class="MyStyle1" runat="server" NavigateUrl="http://www.gmail.com">Mail</asp:HyperLink><br />
+            <asp:HyperLink ID="HyperLink6" class="MyStyle1" runat="server" NavigateUrl="~/FUNC/Done/SendEmails.aspx  ">Compose Mail</asp:HyperLink><br />
+        
+           
+      </Content>  
+    </asp:AccordionPane> 
+</Panes>  
+</asp:Accordion> 
+
+                         
+                         
+                          </div>
+
+                    
+                </td>
+                <td class="style1">
+                    <table>
+                        <tr style="height:auto;vertical-align: top; width: 68%;">
+                            <td>
+                            <div style="background-color: #C0C0C0"> <asp:Label id="HeadingLabel" CssClass="Heading" runat="server" 
+                                    Font-Size="Medium" ForeColor="Black" /> </div>
+                               <br />
+                                <asp:Label id="StatusLabel" EnableViewState="false" runat="server" Text=" " />
+                            </td>
+                        </tr>
+                        <tr >
+                            <td>
+                                <asp:contentplaceholder id="MainContentPlaceHolder" runat="server" />
+                            </td>
+                        </tr>
+                    </table>
+                    <br /> <br />
+                </td>
+                <td style="width:17%; background-color: #C0C0C0; background-image: url('/StartIndex/BaseRestaurant/images/noise.png');";background-color: 
+                    #990000;" class="NavigationPane" >
+                    <div id="menu2" runat="server" 
+                    
+                        style="background-image:url('../../BaseRestaurant/images/noise.png'); position: relative;">
+         <script type="text/javascript" src="..\..\Scripts\v_newsticker_1.js"></script>
+ 
+
+                  
+
+ <br />
+
+
+<script type="text/javascript"><!--    google_ad_client = "ca-pub-5332713042032350"; /* Said */google_ad_slot = "0542722612"; google_ad_width = 468; google_ad_height = 60; //--> </script> <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"> </script> <embed src="http://flash-clocks.com/free-flash-clocks-for-websites/free-flash-clock-59.swf" wmode="transparent" height="120" width="160">
+
+  
+  <div><a>News Bar</a></div>
+  <div style="background-color: #C0C0C0; width: 200px; height: 140px; color: #000000;">
+ <marquee behavior="scroll"  direction="up" height="110" width="190" scrolldelay="300"><asp:Literal ID="Lit1" runat="server"></asp:Literal></marquee>
+</div>
+                  
+                     
+                </td>
+                
+            </tr>
+            <tr valign=top>
+                <td colspan="2" class="FooterPane"
+                    style="background-color: #C0C0C0; background-image: url('/StartIndex/BaseRestaurant/images/top1.png');">
+                  
+                    <asp:Label ID="FooterLabel" runat="server">Page generated at <%# DateTime.Now.ToLongTimeString() %>, <%# DateTime.Now.ToShortDateString() %></asp:Label></td>
+                     
+                      <td height="40" class="HeaderPane" bgcolor="Maroon" 
+                    
+                    style="background-color: #C0C0C0; background-image: url('/StartIndex/BaseRestaurant/images/top1.png');">
+
+           
+                    <asp:contentplaceholder id="Contentplaceholder1" runat="server" />
+
+                    </td>
+            </tr>
+        </table>
+        </div>
+        <div id="footer" style="position: relative">
+            <ul>
+            <li class="first">
+                <ul>
+                    <li><a href="../../ShenaliHome.aspx">Shenali Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="../../BaseRestaurant/RestaurantStart.aspx">Restaurant</a></li>
+                    <li><a href="../../BaseRestHouse/Rest HouseStart.aspx">Rest House</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </li>
+            <li><span>Follow us:</span> <a href="http://facebook.com" class="facebook">
+                &nbsp;</a> <a href="http://twitter.com" class="twitter">&nbsp;</a>
+            </li>
+            <li class="last"><span>&copy; copyright 2012 &copy;. All rights reserved.</span>
+            </li>
+        </ul>
+
+
+        </div>
+
+    </form>
+
+    <p>
+        &nbsp;</p>
+
+             </div>
+
+
+        <div style="float: left; width: 8%; height: 483px; position: relative;"></div>
+        
+        
+        
+       </div>
+    
+
+    
+</body>
+</html>
