@@ -1,5 +1,5 @@
 # restaurant-chain-system
-
+<pre>
 Appendix C
 User Documentation
 Contents
@@ -33,3 +33,4 @@ C-7.1 View User Details
 C-7.2 View Online Orders 
 C-7.3 View Records
 C-8 Message Passing 
+</pre>
