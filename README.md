@@ -15,7 +15,7 @@
 
 <img src ="images/admin-pic1.png">
 
-<img src ="images/admin-pic2.png">
+<img src ="images/View Messages.JPG.png">
 
 <pre>
 Appendix C
