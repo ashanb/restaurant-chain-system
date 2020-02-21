@@ -1,6 +1,22 @@
 # restaurant-chain-system
 # 3rd Year Accademic Project (Working System)
 
+<img src ="images/ER-Diagram.PNG">
+
+<img src ="images/Main-Pic1.png">
+
+<img src ="images/Main-Pic2.png">
+
+<img src ="images/Restaurants-pic1.png">
+
+<img src ="images/Resthouse-pic1.png">
+
+<img src ="images/Resthouse-pic1.png">
+
+<img src ="images/admin-pic1.png">
+
+<img src ="images/admin-pic2.png">
+
 <pre>
 Appendix C
 User Documentation
